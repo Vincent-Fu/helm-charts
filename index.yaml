@@ -1,14 +1,6 @@
-apiVersion: v1
-entries:
-  confMap:
-  - apiVersion: v2
-    appVersion: 1.16.0
-    created: "2025-04-03T10:06:01.779498+08:00"
-    description: A Helm chart for Kubernetes
-    digest: 18be7a6426529455643c4f99bc0b8575767dea8cc127fbb5b86e187c9743c924
-    name: confMap
-    type: application
-    urls:
-    - https://pages.github.ibm.com/fukai/helm-charts/confMap-0.1.0.tgz
-    version: 0.1.0
-generated: "2025-04-03T10:06:01.778714+08:00"
+build:
+  uri: https://github.com/jboss-developer/jboss-eap-quickstarts.git
+  ref: EAP_8.0.0.GA
+  contextDir: helloworld
+deploy:
+  replicas: 1
